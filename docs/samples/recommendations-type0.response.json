@@ -1,0 +1,889 @@
+{
+  "data": {
+    "byPrice": {
+      "offerId": "89423d6d-2f9c-487c-b6ad-ca032ce5e7fa",
+      "user": {
+        "id": "7e920675-8158-44c5-93c9-958767b8c0ab",
+        "username": "asdru2003"
+      },
+      "offerStatus": 1,
+      "offerType": 0,
+      "createdAt": "2026-03-28T18:55:14.080Z",
+      "description": "faço o pagamento rápido ⚡",
+      "cryptoCurrencyId": "TATUM-TRON-USDT",
+      "chain": "TRON",
+      "fiatCurrencyId": "BRL",
+      "limits": {
+        "crypto": {
+          "maxLimit": "697.0290196078431372549",
+          "minLimit": "1.5390196078431372549",
+          "marketSize": "11792.94117647058823529412",
+          "availableSize": "4219.80662023428238704494"
+        },
+        "fiat": {
+          "maxLimit": "3520",
+          "minLimit": "5.35",
+          "marketSize": "60000",
+          "availableSize": "21437.40787249212090240976"
+        }
+      },
+      "isDepleted": false,
+      "fiatToCryptoExchangeRate": "5.1",
+      "offerMakerStats": {
+        "userId": "7e920675-8158-44c5-93c9-958767b8c0ab",
+        "rating": 5,
+        "userRating": 5,
+        "releaseTime": 0.33863333333333334,
+        "payTime": 1.1537,
+        "responseTime": 0.7540333333333333,
+        "totalOffersCount": 116,
+        "totalTransactionCount": 3445,
+        "marketMakerTransactionCount": 3431,
+        "marketTakerTransactionCount": 14,
+        "uniqueTradersCount": 2085,
+        "marketMakerOrderTime": 2.7241,
+        "marketMakerSuccessRatio": 0.9887608069164265,
+        "mmScore": {
+          "dirty": false,
+          "score": 0.9651409143518519,
+          "tier": {
+            "image": {
+              "badge": {
+                "dark": "https://cdn.eldorado.io/api/assets/score_tiers/badge_dark_gold.png",
+                "light": "https://cdn.eldorado.io/api/assets/score_tiers/badge_light_gold.png"
+              },
+              "card": {
+                "dark": "https://cdn.eldorado.io/api/assets/score_tiers/dark_gold.png",
+                "light": "https://cdn.eldorado.io/api/assets/score_tiers/light_gold.png"
+              }
+            },
+            "minScore": 0.9,
+            "rateLimit": {
+              "maxPendingOrders": 20,
+              "maxDisputedOrders": 100
+            },
+            "color": {
+              "bg": {
+                "dark": "E5E517",
+                "light": "F4F49B"
+              },
+              "bar": {
+                "dark": "B9B913",
+                "light": "E5E517"
+              }
+            },
+            "nameCode": "GOLD",
+            "isOfferCardVisible": true,
+            "name": {
+              "pt": "Dourado",
+              "en": "Gold",
+              "es": "Dorado"
+            },
+            "flags": {
+              "isExpressCapable": true,
+              "canOperateWithNewUsers": true
+            },
+            "description": {
+              "pt": "Você faz parte do top do El Dorado!\n\nConquistou a confiança da comunidade. Continue operando com excelência e seja um exemplo para os demais.",
+              "en": "You're part of El Dorado's top!\n\nYou've earned the community's trust. Keep operating with excellence and be a role model for others.",
+              "es": "¡Formas parte del top de El Dorado!\n\nHas ganado la confianza de la comunidad. Sigue operando con excelencia y sé un ejemplo para los demás."
+            },
+            "Conversion": {
+              "pt": "Seu tempo e porcentagem de pedidos concluídos fazem de você um comerciante Dourado.",
+              "en": "Your order time and completion percentage make you a Gold merchant.",
+              "es": "Tu tiempo y porcentaje de órdenes completadas te hacen un comerciante Dorado."
+            },
+            "isBadgeVisible": true,
+            "ConversionTitle": {
+              "pt": "Você está em alta!",
+              "en": "You're on a roll!",
+              "es": "¡Estás en racha!"
+            }
+          },
+          "scorePerFeature": [
+            {
+              "globalAvg": 4.6,
+              "score": 1,
+              "bad": 3,
+              "color": {
+                "dark": "E89E4E",
+                "progress": "2CBB4B",
+                "track": "DEFAE4",
+                "light": "B86D1C"
+              },
+              "nameCode": "LAST_30_DAYS_RATING",
+              "name": {
+                "pt": "Reputação",
+                "en": "Reputation",
+                "es": "Reputación"
+              },
+              "icon": "star",
+              "description": {
+                "pt": "Média de avaliações dadas por outros usuários após completar um pedido. É medida de 1 a 5.",
+                "en": "Average ratings given by other users after completing an order. It is measured from 1 to 5.",
+                "es": "Promedio de calificaciones que te han dado otros usuarios después de completar una orden. Se mide del 1 al 5."
+              },
+              "Conversion": {
+                "pt": "Melhore sua atenção e tempo de resposta para receber melhores avaliações.",
+                "en": "Improve your attention and response time to receive better ratings.",
+                "es": "Mejora tu atención y tiempo de respuesta para recibir mejores calificaciones."
+              },
+              "displayFormat": "RATING",
+              "good": 5,
+              "value": 5
+            },
+            {
+              "globalAvg": 4,
+              "score": 0.944225462962963,
+              "bad": 20,
+              "color": {
+                "dark": "4EA7E8",
+                "progress": "8F5EFF",
+                "track": "E3D7FF",
+                "light": "1C77B8"
+              },
+              "nameCode": "LAST_30_DAYS_MM_ORDER_TIME",
+              "name": {
+                "pt": "Tempo de completamento de pedidos",
+                "en": "Order completion time",
+                "es": "Tiempo de completación de órdenes"
+              },
+              "icon": "timer",
+              "description": {
+                "pt": "Tempo médio que leva para completar seus pedidos.",
+                "en": "Average time it takes to complete your orders.",
+                "es": "Tiempo promedio que tardas en completar tus órdenes."
+              },
+              "Conversion": {
+                "pt": "Reduza o tempo que leva para completar seus pedidos para melhorar seu score.",
+                "en": "Reduce the time it takes to complete your orders to improve your score.",
+                "es": "Reduce el tiempo en el que completas tus órdenes para mejorar tu puntaje."
+              },
+              "displayFormat": "MINUTES",
+              "good": 2,
+              "value": 3.0039416666666665
+            },
+            {
+              "globalAvg": 0.9,
+              "score": 1,
+              "bad": 0.75,
+              "color": {
+                "dark": "EA60D5",
+                "progress": "297EFF",
+                "track": "E4ECFA",
+                "light": "BE2EA9"
+              },
+              "nameCode": "LAST_30_DAYS_MM_SUCCESS_RATIO",
+              "name": {
+                "pt": "Porcentagem de pedidos concluídos",
+                "en": "Completed orders percentage",
+                "es": "Porcentaje de órdenes completadas"
+              },
+              "icon": "circle-percentage",
+              "description": {
+                "pt": "Porcentagem de pedidos que você completou com sucesso nos últimos 30 dias.",
+                "en": "Percentage of orders you successfully completed in the last 30 days.",
+                "es": "Porcentaje de órdenes que completaste con éxito en los últimos 30 días."
+              },
+              "Conversion": {
+                "pt": "Evite cancelar pedidos para evitar afetar seu score.",
+                "en": "Avoid canceling orders to avoid affecting your score.",
+                "es": "Evita cancelar órdenes para no afectar tu puntaje."
+              },
+              "displayFormat": "PERCENTAGE",
+              "good": 0.95,
+              "value": 0.9809782608695652
+            },
+            {
+              "globalAvg": 200,
+              "score": 1,
+              "bad": 50,
+              "color": {
+                "dark": "B35FD5",
+                "progress": "F0A40A",
+                "track": "FAEFD4",
+                "light": "822DA5"
+              },
+              "nameCode": "HISTORICAL_MM_COMPLETED_ORDERS",
+              "name": {
+                "pt": "Pedidos concluídos",
+                "en": "Completed orders",
+                "es": "Órdenes completadas"
+              },
+              "icon": "circle-check",
+              "description": {
+                "pt": "Quantidade total de pedidos concluídos como comerciante.",
+                "en": "Total number of orders completed as a merchant.",
+                "es": "Cantidad total de órdenes completadas como comerciante."
+              },
+              "Conversion": {
+                "pt": "Complete mais pedidos como comerciante. Aumentar sua atividade melhora sua visibilidade e ajuda a melhorar seu score.",
+                "en": "Complete more orders as a merchant. Increasing your activity improves your visibility and helps you improve your score.",
+                "es": "Completa más órdenes como comerciante. Aumentar tu actividad mejora tu visibilidad y te ayuda a subir tu puntaje."
+              },
+              "displayFormat": "NUMBER",
+              "good": 250,
+              "value": 3431
+            }
+          ],
+          "version": "v3.6"
+        },
+        "mtScore": {
+          "dirty": false,
+          "score": 0.5,
+          "tier": {
+            "image": {
+              "card": {
+                "dark": "https://cdn.eldorado.io/api/assets/score_tiers/dark_base.png",
+                "light": "https://cdn.eldorado.io/api/assets/score_tiers/light_base.png"
+              }
+            },
+            "rateLimit": {
+              "maxPendingOrders": 3,
+              "maxDisputedOrders": 3
+            },
+            "color": {
+              "bg": {
+                "dark": "5B5B55",
+                "light": "E6E6E4"
+              },
+              "bar": {
+                "dark": "74746B",
+                "light": "B9B9B3"
+              }
+            },
+            "nameCode": "NO_TIER",
+            "name": {
+              "pt": "Base",
+              "en": "Base",
+              "es": "Base"
+            },
+            "flags": {
+              "isNewUser": false
+            },
+            "description": {
+              "pt": "Você está começando seu caminho como comerciante.\n\nPara subir de nível, enfóque-se em completar mais pedidos, permaneça disponível para que seus pagamentos e liberações sejam rápidos.",
+              "en": "You're just starting your journey as a trader.\n\nTo level up, focus on completing more orders, stay available so your payments and releases are fast.",
+              "es": "Estás comenzando tu camino como comerciante.\n\nPara subir de nivel, enfócate en completar más órdenes, permanece disponible para que tus pagos y liberaciones sean rápidos."
+            },
+            "Conversion": {
+              "pt": "Complete seus pedidos mais rápido e evite cancelamentos para subir de nível.",
+              "en": "Complete your orders faster and avoid cancellations to level up.",
+              "es": "Completa tus órdenes más rápido y evita cancelaciones para subir de nivel."
+            },
+            "ConversionTitle": {
+              "pt": "Complete pedidos e suba de nível",
+              "en": "Complete orders and level up",
+              "es": "Completa órdenes y sube de nivel"
+            }
+          },
+          "scorePerFeature": [],
+          "version": "v3.6"
+        },
+        "user_lastSeen": "52",
+        "user_status": "OFFLINE"
+      },
+      "paymentMethods": [
+        "app_pix_brl"
+      ],
+      "paused": false,
+      "user_status": "OFFLINE",
+      "user_lastSeen": "52",
+      "visibility": "PUBLIC",
+      "orderRequestEnabled": true,
+      "offerTransactionsEnabled": true,
+      "escrow": "INTERNAL_V2",
+      "allowsThirdPartyPayments": true
+    },
+    "bySpeed": {
+      "offerId": "89423d6d-2f9c-487c-b6ad-ca032ce5e7fa",
+      "user": {
+        "id": "7e920675-8158-44c5-93c9-958767b8c0ab",
+        "username": "asdru2003"
+      },
+      "offerStatus": 1,
+      "offerType": 0,
+      "createdAt": "2026-03-28T18:55:14.080Z",
+      "description": "faço o pagamento rápido ⚡",
+      "cryptoCurrencyId": "TATUM-TRON-USDT",
+      "chain": "TRON",
+      "fiatCurrencyId": "BRL",
+      "limits": {
+        "crypto": {
+          "maxLimit": "697.0290196078431372549",
+          "minLimit": "1.5390196078431372549",
+          "marketSize": "11792.94117647058823529412",
+          "availableSize": "4219.80662023428238704494"
+        },
+        "fiat": {
+          "maxLimit": "3520",
+          "minLimit": "5.35",
+          "marketSize": "60000",
+          "availableSize": "21437.40787249212090240976"
+        }
+      },
+      "isDepleted": false,
+      "fiatToCryptoExchangeRate": "5.1",
+      "offerMakerStats": {
+        "userId": "7e920675-8158-44c5-93c9-958767b8c0ab",
+        "rating": 5,
+        "userRating": 5,
+        "releaseTime": 0.33863333333333334,
+        "payTime": 1.1537,
+        "responseTime": 0.7540333333333333,
+        "totalOffersCount": 116,
+        "totalTransactionCount": 3445,
+        "marketMakerTransactionCount": 3431,
+        "marketTakerTransactionCount": 14,
+        "uniqueTradersCount": 2085,
+        "marketMakerOrderTime": 2.7241,
+        "marketMakerSuccessRatio": 0.9887608069164265,
+        "mmScore": {
+          "dirty": false,
+          "score": 0.9651409143518519,
+          "tier": {
+            "image": {
+              "badge": {
+                "dark": "https://cdn.eldorado.io/api/assets/score_tiers/badge_dark_gold.png",
+                "light": "https://cdn.eldorado.io/api/assets/score_tiers/badge_light_gold.png"
+              },
+              "card": {
+                "dark": "https://cdn.eldorado.io/api/assets/score_tiers/dark_gold.png",
+                "light": "https://cdn.eldorado.io/api/assets/score_tiers/light_gold.png"
+              }
+            },
+            "minScore": 0.9,
+            "rateLimit": {
+              "maxPendingOrders": 20,
+              "maxDisputedOrders": 100
+            },
+            "color": {
+              "bg": {
+                "dark": "E5E517",
+                "light": "F4F49B"
+              },
+              "bar": {
+                "dark": "B9B913",
+                "light": "E5E517"
+              }
+            },
+            "nameCode": "GOLD",
+            "isOfferCardVisible": true,
+            "name": {
+              "pt": "Dourado",
+              "en": "Gold",
+              "es": "Dorado"
+            },
+            "flags": {
+              "isExpressCapable": true,
+              "canOperateWithNewUsers": true
+            },
+            "description": {
+              "pt": "Você faz parte do top do El Dorado!\n\nConquistou a confiança da comunidade. Continue operando com excelência e seja um exemplo para os demais.",
+              "en": "You're part of El Dorado's top!\n\nYou've earned the community's trust. Keep operating with excellence and be a role model for others.",
+              "es": "¡Formas parte del top de El Dorado!\n\nHas ganado la confianza de la comunidad. Sigue operando con excelencia y sé un ejemplo para los demás."
+            },
+            "Conversion": {
+              "pt": "Seu tempo e porcentagem de pedidos concluídos fazem de você um comerciante Dourado.",
+              "en": "Your order time and completion percentage make you a Gold merchant.",
+              "es": "Tu tiempo y porcentaje de órdenes completadas te hacen un comerciante Dorado."
+            },
+            "isBadgeVisible": true,
+            "ConversionTitle": {
+              "pt": "Você está em alta!",
+              "en": "You're on a roll!",
+              "es": "¡Estás en racha!"
+            }
+          },
+          "scorePerFeature": [
+            {
+              "globalAvg": 4.6,
+              "score": 1,
+              "bad": 3,
+              "color": {
+                "dark": "E89E4E",
+                "progress": "2CBB4B",
+                "track": "DEFAE4",
+                "light": "B86D1C"
+              },
+              "nameCode": "LAST_30_DAYS_RATING",
+              "name": {
+                "pt": "Reputação",
+                "en": "Reputation",
+                "es": "Reputación"
+              },
+              "icon": "star",
+              "description": {
+                "pt": "Média de avaliações dadas por outros usuários após completar um pedido. É medida de 1 a 5.",
+                "en": "Average ratings given by other users after completing an order. It is measured from 1 to 5.",
+                "es": "Promedio de calificaciones que te han dado otros usuarios después de completar una orden. Se mide del 1 al 5."
+              },
+              "Conversion": {
+                "pt": "Melhore sua atenção e tempo de resposta para receber melhores avaliações.",
+                "en": "Improve your attention and response time to receive better ratings.",
+                "es": "Mejora tu atención y tiempo de respuesta para recibir mejores calificaciones."
+              },
+              "displayFormat": "RATING",
+              "good": 5,
+              "value": 5
+            },
+            {
+              "globalAvg": 4,
+              "score": 0.944225462962963,
+              "bad": 20,
+              "color": {
+                "dark": "4EA7E8",
+                "progress": "8F5EFF",
+                "track": "E3D7FF",
+                "light": "1C77B8"
+              },
+              "nameCode": "LAST_30_DAYS_MM_ORDER_TIME",
+              "name": {
+                "pt": "Tempo de completamento de pedidos",
+                "en": "Order completion time",
+                "es": "Tiempo de completación de órdenes"
+              },
+              "icon": "timer",
+              "description": {
+                "pt": "Tempo médio que leva para completar seus pedidos.",
+                "en": "Average time it takes to complete your orders.",
+                "es": "Tiempo promedio que tardas en completar tus órdenes."
+              },
+              "Conversion": {
+                "pt": "Reduza o tempo que leva para completar seus pedidos para melhorar seu score.",
+                "en": "Reduce the time it takes to complete your orders to improve your score.",
+                "es": "Reduce el tiempo en el que completas tus órdenes para mejorar tu puntaje."
+              },
+              "displayFormat": "MINUTES",
+              "good": 2,
+              "value": 3.0039416666666665
+            },
+            {
+              "globalAvg": 0.9,
+              "score": 1,
+              "bad": 0.75,
+              "color": {
+                "dark": "EA60D5",
+                "progress": "297EFF",
+                "track": "E4ECFA",
+                "light": "BE2EA9"
+              },
+              "nameCode": "LAST_30_DAYS_MM_SUCCESS_RATIO",
+              "name": {
+                "pt": "Porcentagem de pedidos concluídos",
+                "en": "Completed orders percentage",
+                "es": "Porcentaje de órdenes completadas"
+              },
+              "icon": "circle-percentage",
+              "description": {
+                "pt": "Porcentagem de pedidos que você completou com sucesso nos últimos 30 dias.",
+                "en": "Percentage of orders you successfully completed in the last 30 days.",
+                "es": "Porcentaje de órdenes que completaste con éxito en los últimos 30 días."
+              },
+              "Conversion": {
+                "pt": "Evite cancelar pedidos para evitar afetar seu score.",
+                "en": "Avoid canceling orders to avoid affecting your score.",
+                "es": "Evita cancelar órdenes para no afectar tu puntaje."
+              },
+              "displayFormat": "PERCENTAGE",
+              "good": 0.95,
+              "value": 0.9809782608695652
+            },
+            {
+              "globalAvg": 200,
+              "score": 1,
+              "bad": 50,
+              "color": {
+                "dark": "B35FD5",
+                "progress": "F0A40A",
+                "track": "FAEFD4",
+                "light": "822DA5"
+              },
+              "nameCode": "HISTORICAL_MM_COMPLETED_ORDERS",
+              "name": {
+                "pt": "Pedidos concluídos",
+                "en": "Completed orders",
+                "es": "Órdenes completadas"
+              },
+              "icon": "circle-check",
+              "description": {
+                "pt": "Quantidade total de pedidos concluídos como comerciante.",
+                "en": "Total number of orders completed as a merchant.",
+                "es": "Cantidad total de órdenes completadas como comerciante."
+              },
+              "Conversion": {
+                "pt": "Complete mais pedidos como comerciante. Aumentar sua atividade melhora sua visibilidade e ajuda a melhorar seu score.",
+                "en": "Complete more orders as a merchant. Increasing your activity improves your visibility and helps you improve your score.",
+                "es": "Completa más órdenes como comerciante. Aumentar tu actividad mejora tu visibilidad y te ayuda a subir tu puntaje."
+              },
+              "displayFormat": "NUMBER",
+              "good": 250,
+              "value": 3431
+            }
+          ],
+          "version": "v3.6"
+        },
+        "mtScore": {
+          "dirty": false,
+          "score": 0.5,
+          "tier": {
+            "image": {
+              "card": {
+                "dark": "https://cdn.eldorado.io/api/assets/score_tiers/dark_base.png",
+                "light": "https://cdn.eldorado.io/api/assets/score_tiers/light_base.png"
+              }
+            },
+            "rateLimit": {
+              "maxPendingOrders": 3,
+              "maxDisputedOrders": 3
+            },
+            "color": {
+              "bg": {
+                "dark": "5B5B55",
+                "light": "E6E6E4"
+              },
+              "bar": {
+                "dark": "74746B",
+                "light": "B9B9B3"
+              }
+            },
+            "nameCode": "NO_TIER",
+            "name": {
+              "pt": "Base",
+              "en": "Base",
+              "es": "Base"
+            },
+            "flags": {
+              "isNewUser": false
+            },
+            "description": {
+              "pt": "Você está começando seu caminho como comerciante.\n\nPara subir de nível, enfóque-se em completar mais pedidos, permaneça disponível para que seus pagamentos e liberações sejam rápidos.",
+              "en": "You're just starting your journey as a trader.\n\nTo level up, focus on completing more orders, stay available so your payments and releases are fast.",
+              "es": "Estás comenzando tu camino como comerciante.\n\nPara subir de nivel, enfócate en completar más órdenes, permanece disponible para que tus pagos y liberaciones sean rápidos."
+            },
+            "Conversion": {
+              "pt": "Complete seus pedidos mais rápido e evite cancelamentos para subir de nível.",
+              "en": "Complete your orders faster and avoid cancellations to level up.",
+              "es": "Completa tus órdenes más rápido y evita cancelaciones para subir de nivel."
+            },
+            "ConversionTitle": {
+              "pt": "Complete pedidos e suba de nível",
+              "en": "Complete orders and level up",
+              "es": "Completa órdenes y sube de nivel"
+            }
+          },
+          "scorePerFeature": [],
+          "version": "v3.6"
+        },
+        "user_lastSeen": "52",
+        "user_status": "OFFLINE"
+      },
+      "paymentMethods": [
+        "app_pix_brl"
+      ],
+      "paused": false,
+      "user_status": "OFFLINE",
+      "user_lastSeen": "52",
+      "visibility": "PUBLIC",
+      "orderRequestEnabled": true,
+      "offerTransactionsEnabled": true,
+      "escrow": "INTERNAL_V2",
+      "allowsThirdPartyPayments": true
+    },
+    "byReputation": {
+      "offerId": "89423d6d-2f9c-487c-b6ad-ca032ce5e7fa",
+      "user": {
+        "id": "7e920675-8158-44c5-93c9-958767b8c0ab",
+        "username": "asdru2003"
+      },
+      "offerStatus": 1,
+      "offerType": 0,
+      "createdAt": "2026-03-28T18:55:14.080Z",
+      "description": "faço o pagamento rápido ⚡",
+      "cryptoCurrencyId": "TATUM-TRON-USDT",
+      "chain": "TRON",
+      "fiatCurrencyId": "BRL",
+      "limits": {
+        "crypto": {
+          "maxLimit": "697.0290196078431372549",
+          "minLimit": "1.5390196078431372549",
+          "marketSize": "11792.94117647058823529412",
+          "availableSize": "4219.80662023428238704494"
+        },
+        "fiat": {
+          "maxLimit": "3520",
+          "minLimit": "5.35",
+          "marketSize": "60000",
+          "availableSize": "21437.40787249212090240976"
+        }
+      },
+      "isDepleted": false,
+      "fiatToCryptoExchangeRate": "5.1",
+      "offerMakerStats": {
+        "userId": "7e920675-8158-44c5-93c9-958767b8c0ab",
+        "rating": 5,
+        "userRating": 5,
+        "releaseTime": 0.33863333333333334,
+        "payTime": 1.1537,
+        "responseTime": 0.7540333333333333,
+        "totalOffersCount": 116,
+        "totalTransactionCount": 3445,
+        "marketMakerTransactionCount": 3431,
+        "marketTakerTransactionCount": 14,
+        "uniqueTradersCount": 2085,
+        "marketMakerOrderTime": 2.7241,
+        "marketMakerSuccessRatio": 0.9887608069164265,
+        "mmScore": {
+          "dirty": false,
+          "score": 0.9651409143518519,
+          "tier": {
+            "image": {
+              "badge": {
+                "dark": "https://cdn.eldorado.io/api/assets/score_tiers/badge_dark_gold.png",
+                "light": "https://cdn.eldorado.io/api/assets/score_tiers/badge_light_gold.png"
+              },
+              "card": {
+                "dark": "https://cdn.eldorado.io/api/assets/score_tiers/dark_gold.png",
+                "light": "https://cdn.eldorado.io/api/assets/score_tiers/light_gold.png"
+              }
+            },
+            "minScore": 0.9,
+            "rateLimit": {
+              "maxPendingOrders": 20,
+              "maxDisputedOrders": 100
+            },
+            "color": {
+              "bg": {
+                "dark": "E5E517",
+                "light": "F4F49B"
+              },
+              "bar": {
+                "dark": "B9B913",
+                "light": "E5E517"
+              }
+            },
+            "nameCode": "GOLD",
+            "isOfferCardVisible": true,
+            "name": {
+              "pt": "Dourado",
+              "en": "Gold",
+              "es": "Dorado"
+            },
+            "flags": {
+              "isExpressCapable": true,
+              "canOperateWithNewUsers": true
+            },
+            "description": {
+              "pt": "Você faz parte do top do El Dorado!\n\nConquistou a confiança da comunidade. Continue operando com excelência e seja um exemplo para os demais.",
+              "en": "You're part of El Dorado's top!\n\nYou've earned the community's trust. Keep operating with excellence and be a role model for others.",
+              "es": "¡Formas parte del top de El Dorado!\n\nHas ganado la confianza de la comunidad. Sigue operando con excelencia y sé un ejemplo para los demás."
+            },
+            "Conversion": {
+              "pt": "Seu tempo e porcentagem de pedidos concluídos fazem de você um comerciante Dourado.",
+              "en": "Your order time and completion percentage make you a Gold merchant.",
+              "es": "Tu tiempo y porcentaje de órdenes completadas te hacen un comerciante Dorado."
+            },
+            "isBadgeVisible": true,
+            "ConversionTitle": {
+              "pt": "Você está em alta!",
+              "en": "You're on a roll!",
+              "es": "¡Estás en racha!"
+            }
+          },
+          "scorePerFeature": [
+            {
+              "globalAvg": 4.6,
+              "score": 1,
+              "bad": 3,
+              "color": {
+                "dark": "E89E4E",
+                "progress": "2CBB4B",
+                "track": "DEFAE4",
+                "light": "B86D1C"
+              },
+              "nameCode": "LAST_30_DAYS_RATING",
+              "name": {
+                "pt": "Reputação",
+                "en": "Reputation",
+                "es": "Reputación"
+              },
+              "icon": "star",
+              "description": {
+                "pt": "Média de avaliações dadas por outros usuários após completar um pedido. É medida de 1 a 5.",
+                "en": "Average ratings given by other users after completing an order. It is measured from 1 to 5.",
+                "es": "Promedio de calificaciones que te han dado otros usuarios después de completar una orden. Se mide del 1 al 5."
+              },
+              "Conversion": {
+                "pt": "Melhore sua atenção e tempo de resposta para receber melhores avaliações.",
+                "en": "Improve your attention and response time to receive better ratings.",
+                "es": "Mejora tu atención y tiempo de respuesta para recibir mejores calificaciones."
+              },
+              "displayFormat": "RATING",
+              "good": 5,
+              "value": 5
+            },
+            {
+              "globalAvg": 4,
+              "score": 0.944225462962963,
+              "bad": 20,
+              "color": {
+                "dark": "4EA7E8",
+                "progress": "8F5EFF",
+                "track": "E3D7FF",
+                "light": "1C77B8"
+              },
+              "nameCode": "LAST_30_DAYS_MM_ORDER_TIME",
+              "name": {
+                "pt": "Tempo de completamento de pedidos",
+                "en": "Order completion time",
+                "es": "Tiempo de completación de órdenes"
+              },
+              "icon": "timer",
+              "description": {
+                "pt": "Tempo médio que leva para completar seus pedidos.",
+                "en": "Average time it takes to complete your orders.",
+                "es": "Tiempo promedio que tardas en completar tus órdenes."
+              },
+              "Conversion": {
+                "pt": "Reduza o tempo que leva para completar seus pedidos para melhorar seu score.",
+                "en": "Reduce the time it takes to complete your orders to improve your score.",
+                "es": "Reduce el tiempo en el que completas tus órdenes para mejorar tu puntaje."
+              },
+              "displayFormat": "MINUTES",
+              "good": 2,
+              "value": 3.0039416666666665
+            },
+            {
+              "globalAvg": 0.9,
+              "score": 1,
+              "bad": 0.75,
+              "color": {
+                "dark": "EA60D5",
+                "progress": "297EFF",
+                "track": "E4ECFA",
+                "light": "BE2EA9"
+              },
+              "nameCode": "LAST_30_DAYS_MM_SUCCESS_RATIO",
+              "name": {
+                "pt": "Porcentagem de pedidos concluídos",
+                "en": "Completed orders percentage",
+                "es": "Porcentaje de órdenes completadas"
+              },
+              "icon": "circle-percentage",
+              "description": {
+                "pt": "Porcentagem de pedidos que você completou com sucesso nos últimos 30 dias.",
+                "en": "Percentage of orders you successfully completed in the last 30 days.",
+                "es": "Porcentaje de órdenes que completaste con éxito en los últimos 30 días."
+              },
+              "Conversion": {
+                "pt": "Evite cancelar pedidos para evitar afetar seu score.",
+                "en": "Avoid canceling orders to avoid affecting your score.",
+                "es": "Evita cancelar órdenes para no afectar tu puntaje."
+              },
+              "displayFormat": "PERCENTAGE",
+              "good": 0.95,
+              "value": 0.9809782608695652
+            },
+            {
+              "globalAvg": 200,
+              "score": 1,
+              "bad": 50,
+              "color": {
+                "dark": "B35FD5",
+                "progress": "F0A40A",
+                "track": "FAEFD4",
+                "light": "822DA5"
+              },
+              "nameCode": "HISTORICAL_MM_COMPLETED_ORDERS",
+              "name": {
+                "pt": "Pedidos concluídos",
+                "en": "Completed orders",
+                "es": "Órdenes completadas"
+              },
+              "icon": "circle-check",
+              "description": {
+                "pt": "Quantidade total de pedidos concluídos como comerciante.",
+                "en": "Total number of orders completed as a merchant.",
+                "es": "Cantidad total de órdenes completadas como comerciante."
+              },
+              "Conversion": {
+                "pt": "Complete mais pedidos como comerciante. Aumentar sua atividade melhora sua visibilidade e ajuda a melhorar seu score.",
+                "en": "Complete more orders as a merchant. Increasing your activity improves your visibility and helps you improve your score.",
+                "es": "Completa más órdenes como comerciante. Aumentar tu actividad mejora tu visibilidad y te ayuda a subir tu puntaje."
+              },
+              "displayFormat": "NUMBER",
+              "good": 250,
+              "value": 3431
+            }
+          ],
+          "version": "v3.6"
+        },
+        "mtScore": {
+          "dirty": false,
+          "score": 0.5,
+          "tier": {
+            "image": {
+              "card": {
+                "dark": "https://cdn.eldorado.io/api/assets/score_tiers/dark_base.png",
+                "light": "https://cdn.eldorado.io/api/assets/score_tiers/light_base.png"
+              }
+            },
+            "rateLimit": {
+              "maxPendingOrders": 3,
+              "maxDisputedOrders": 3
+            },
+            "color": {
+              "bg": {
+                "dark": "5B5B55",
+                "light": "E6E6E4"
+              },
+              "bar": {
+                "dark": "74746B",
+                "light": "B9B9B3"
+              }
+            },
+            "nameCode": "NO_TIER",
+            "name": {
+              "pt": "Base",
+              "en": "Base",
+              "es": "Base"
+            },
+            "flags": {
+              "isNewUser": false
+            },
+            "description": {
+              "pt": "Você está começando seu caminho como comerciante.\n\nPara subir de nível, enfóque-se em completar mais pedidos, permaneça disponível para que seus pagamentos e liberações sejam rápidos.",
+              "en": "You're just starting your journey as a trader.\n\nTo level up, focus on completing more orders, stay available so your payments and releases are fast.",
+              "es": "Estás comenzando tu camino como comerciante.\n\nPara subir de nivel, enfócate en completar más órdenes, permanece disponible para que tus pagos y liberaciones sean rápidos."
+            },
+            "Conversion": {
+              "pt": "Complete seus pedidos mais rápido e evite cancelamentos para subir de nível.",
+              "en": "Complete your orders faster and avoid cancellations to level up.",
+              "es": "Completa tus órdenes más rápido y evita cancelaciones para subir de nivel."
+            },
+            "ConversionTitle": {
+              "pt": "Complete pedidos e suba de nível",
+              "en": "Complete orders and level up",
+              "es": "Completa órdenes y sube de nivel"
+            }
+          },
+          "scorePerFeature": [],
+          "version": "v3.6"
+        },
+        "user_lastSeen": "52",
+        "user_status": "OFFLINE"
+      },
+      "paymentMethods": [
+        "app_pix_brl"
+      ],
+      "paused": false,
+      "user_status": "OFFLINE",
+      "user_lastSeen": "52",
+      "visibility": "PUBLIC",
+      "orderRequestEnabled": true,
+      "offerTransactionsEnabled": true,
+      "escrow": "INTERNAL_V2",
+      "allowsThirdPartyPayments": true
+    }
+  }
+}

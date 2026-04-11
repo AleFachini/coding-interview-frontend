@@ -9,7 +9,7 @@ Acá tienes todos los assets que necesitas para llevar a cabo una pequeña prueb
 3. La moneda del input 
 
 ## API
-- URL: https://74j6q7lg6a.execute-api.eu-west-1.amazonaws.com/stage/orderbook/public/recommendations
+- URL: https://74j6q7lg6a.execute-api.eu-west-1.amazonaws.com/stage/orderbook/public/Conversion
 - Query Params:
   - `type`: 0 -> Cambio de CRYPTO a FIAT, 1 -> Cambio de FIAT a CRYPTO
   - `cryptoCurrencyId`: La moneda crypto (el ID está en el nombre del asset)
