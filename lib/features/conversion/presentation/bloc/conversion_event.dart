@@ -8,8 +8,8 @@ sealed class ConversionEvent extends Equatable {
   List<Object?> get props => <Object?>[];
 }
 
-final class SourceCurrencyChanged extends ConversionEvent {
-  const SourceCurrencyChanged(this.currency);
+final class LeftCurrencyChanged extends ConversionEvent {
+  const LeftCurrencyChanged(this.currency);
 
   final Currency currency;
 
@@ -17,13 +17,17 @@ final class SourceCurrencyChanged extends ConversionEvent {
   List<Object> get props => <Object>[currency];
 }
 
-final class FiatCurrencyChanged extends ConversionEvent {
-  const FiatCurrencyChanged(this.currency);
+final class RightCurrencyChanged extends ConversionEvent {
+  const RightCurrencyChanged(this.currency);
 
   final Currency currency;
 
   @override
   List<Object> get props => <Object>[currency];
+}
+
+final class SwapCurrenciesRequested extends ConversionEvent {
+  const SwapCurrenciesRequested();
 }
 
 final class AmountChanged extends ConversionEvent {
@@ -37,9 +41,4 @@ final class AmountChanged extends ConversionEvent {
 
 final class ConvertRequested extends ConversionEvent {
   const ConvertRequested();
-}
-
-/// Dispatched once at startup to run the default conversion request.
-final class ConversionAppStarted extends ConversionEvent {
-  const ConversionAppStarted();
 }

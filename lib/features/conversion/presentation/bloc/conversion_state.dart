@@ -4,8 +4,8 @@ import 'package:equatable/equatable.dart';
 
 class ConversionState extends Equatable {
   const ConversionState({
-    required this.sourceCurrency,
-    required this.fiatCurrency,
+    required this.leftCurrency,
+    required this.rightCurrency,
     required this.amountCurrency,
     required this.amountText,
     this.quote,
@@ -13,20 +13,33 @@ class ConversionState extends Equatable {
     this.isLoading = false,
   });
 
-  final Currency sourceCurrency;
-  final Currency fiatCurrency;
-  /// Currency the [amountText] is denominated in (maps to `amountCurrencyId`).
+  /// TENGO (left chip): crypto or fiat depending on user flow.
+  final Currency leftCurrency;
+
+  /// QUIERO (right chip): the opposite side type from [leftCurrency].
+  final Currency rightCurrency;
+
+  /// Currency the [amountText] is denominated in (`amountCurrencyId` in API).
   final Currency amountCurrency;
+
   final String amountText;
   final ConversionQuote? quote;
   final String? errorMessage;
   final bool isLoading;
 
-  int get requestType => sourceCurrency.type == CurrencyType.fiat ? 1 : 0;
+  /// API `type`: 0 = CRYPTO → FIAT, 1 = FIAT → CRYPTO.
+  int get requestType =>
+      leftCurrency.type == CurrencyType.crypto ? 0 : 1;
+
+  Currency get cryptoSide =>
+      leftCurrency.type == CurrencyType.crypto ? leftCurrency : rightCurrency;
+
+  Currency get fiatSide =>
+      leftCurrency.type == CurrencyType.fiat ? leftCurrency : rightCurrency;
 
   ConversionState copyWith({
-    Currency? sourceCurrency,
-    Currency? fiatCurrency,
+    Currency? leftCurrency,
+    Currency? rightCurrency,
     Currency? amountCurrency,
     String? amountText,
     ConversionQuote? quote,
@@ -36,8 +49,8 @@ class ConversionState extends Equatable {
     bool? isLoading,
   }) {
     return ConversionState(
-      sourceCurrency: sourceCurrency ?? this.sourceCurrency,
-      fiatCurrency: fiatCurrency ?? this.fiatCurrency,
+      leftCurrency: leftCurrency ?? this.leftCurrency,
+      rightCurrency: rightCurrency ?? this.rightCurrency,
       amountCurrency: amountCurrency ?? this.amountCurrency,
       amountText: amountText ?? this.amountText,
       quote: clearQuote ? null : (quote ?? this.quote),
@@ -48,8 +61,8 @@ class ConversionState extends Equatable {
 
   @override
   List<Object?> get props => <Object?>[
-        sourceCurrency,
-        fiatCurrency,
+        leftCurrency,
+        rightCurrency,
         amountCurrency,
         amountText,
         quote,

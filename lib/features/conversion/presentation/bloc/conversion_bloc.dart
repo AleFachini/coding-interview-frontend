@@ -9,35 +9,28 @@ class ConversionBloc extends Bloc<ConversionEvent, ConversionState> {
   ConversionBloc(this._getConversionQuoteUseCase)
       : super(
           ConversionState(
-            sourceCurrency: CurrencyCatalog.usdtTron,
-            fiatCurrency: CurrencyCatalog.fiatByCode('BRL'),
-            amountCurrency: CurrencyCatalog.fiatByCode('BRL'),
-            amountText: '100',
+            leftCurrency: CurrencyCatalog.usdtTron,
+            rightCurrency: CurrencyCatalog.fiat.first,
+            amountCurrency: CurrencyCatalog.usdtTron,
+            amountText: '5',
           ),
         ) {
-    on<ConversionAppStarted>(_onAppStarted);
-    on<SourceCurrencyChanged>(_onSourceChanged);
-    on<FiatCurrencyChanged>(_onFiatCurrencyChanged);
+    on<LeftCurrencyChanged>(_onLeftCurrencyChanged);
+    on<RightCurrencyChanged>(_onRightCurrencyChanged);
+    on<SwapCurrenciesRequested>(_onSwapRequested);
     on<AmountChanged>(_onAmountChanged);
     on<ConvertRequested>(_onConvertRequested);
   }
 
   final GetConversionQuoteUseCase _getConversionQuoteUseCase;
 
-  void _onAppStarted(
-    ConversionAppStarted event,
-    Emitter<ConversionState> emit,
-  ) {
-    add(const ConvertRequested());
-  }
-
-  void _onSourceChanged(
-    SourceCurrencyChanged event,
+  void _onLeftCurrencyChanged(
+    LeftCurrencyChanged event,
     Emitter<ConversionState> emit,
   ) {
     emit(
       state.copyWith(
-        sourceCurrency: event.currency,
+        leftCurrency: event.currency,
         amountCurrency: event.currency,
         clearError: true,
         clearQuote: true,
@@ -45,13 +38,28 @@ class ConversionBloc extends Bloc<ConversionEvent, ConversionState> {
     );
   }
 
-  void _onFiatCurrencyChanged(
-    FiatCurrencyChanged event,
+  void _onRightCurrencyChanged(
+    RightCurrencyChanged event,
     Emitter<ConversionState> emit,
   ) {
     emit(
       state.copyWith(
-        fiatCurrency: event.currency,
+        rightCurrency: event.currency,
+        clearError: true,
+        clearQuote: true,
+      ),
+    );
+  }
+
+  void _onSwapRequested(
+    SwapCurrenciesRequested event,
+    Emitter<ConversionState> emit,
+  ) {
+    emit(
+      state.copyWith(
+        leftCurrency: state.rightCurrency,
+        rightCurrency: state.leftCurrency,
+        amountCurrency: state.rightCurrency,
         clearError: true,
         clearQuote: true,
       ),
@@ -72,11 +80,11 @@ class ConversionBloc extends Bloc<ConversionEvent, ConversionState> {
     ConvertRequested event,
     Emitter<ConversionState> emit,
   ) async {
-    final num? amount = num.tryParse(state.amountText);
+    final num? amount = num.tryParse(state.amountText.replaceAll(',', '.'));
     if (amount == null || amount <= 0) {
       emit(
         state.copyWith(
-          errorMessage: 'Enter a valid amount greater than zero.',
+          errorMessage: 'Ingresa un monto válido mayor a cero.',
           clearQuote: true,
         ),
       );
@@ -89,7 +97,7 @@ class ConversionBloc extends Bloc<ConversionEvent, ConversionState> {
         GetConversionQuoteParams(
           type: state.requestType,
           cryptoCurrencyId: CurrencyCatalog.usdtTron.id,
-          fiatCurrencyId: state.fiatCurrency.id,
+          fiatCurrencyId: state.fiatSide.id,
           amount: amount,
           amountCurrencyId: state.amountCurrency.id,
         ),

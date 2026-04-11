@@ -6,7 +6,7 @@ Reference for the El Dorado–style **orderbook public Conversion** endpoint use
 
 - **Method:** `GET`
 - **Base URL:**  
-  `https://74j6q7lg6a.execute-api.eu-west-1.amazonaws.com/stage/orderbook/public/Conversion`
+  `https://74j6q7lg6a.execute-api.eu-west-1.amazonaws.com/stage/orderbook/public/recommendations`
 
 ## Query parameters
 
@@ -25,7 +25,7 @@ Currency ids are **strings** (not numeric), matching the asset naming convention
 Full URL:
 
 ```http
-GET https://74j6q7lg6a.execute-api.eu-west-1.amazonaws.com/stage/orderbook/public/Conversion?type=0&cryptoCurrencyId=TATUM-TRON-USDT&fiatCurrencyId=BRL&amount=100&amountCurrencyId=BRL
+GET https://74j6q7lg6a.execute-api.eu-west-1.amazonaws.com/stage/orderbook/public/recommendations?type=0&cryptoCurrencyId=TATUM-TRON-USDT&fiatCurrencyId=BRL&amount=100&amountCurrencyId=BRL
 ```
 
 ## Response shape
@@ -57,9 +57,9 @@ The Flutter client reads **`data.byPrice.fiatToCryptoExchangeRate`** and combine
 
 A verbatim JSON body for the example request above is stored at:
 
-[`docs/samples/Conversion-type0.response.json`](samples/Conversion-type0.response.json)
+[`docs/samples/recommendations-type0.response.json`](samples/recommendations-type0.response.json)
 
-Use it for fixtures, Postman mocks, or diffing against live responses.
+Use it for fixtures, Postman mocks, or diffing against live responses. Unit tests load this file directly (`conversion_response_model_test.dart`) so parsing stays aligned with a real captured body.
 
 ## Notes
 

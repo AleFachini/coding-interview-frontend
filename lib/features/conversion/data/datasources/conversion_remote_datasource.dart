@@ -1,5 +1,6 @@
 import 'package:coding_interview_frontend/core/errors/api_exception.dart';
 import 'package:coding_interview_frontend/core/services/conversion_api_service.dart';
+import 'package:coding_interview_frontend/core/utils/api_user_message_mapper.dart';
 import 'package:coding_interview_frontend/features/conversion/data/models/conversion_response_model.dart';
 import 'package:dio/dio.dart';
 
@@ -46,10 +47,18 @@ class ConversionRemoteDataSourceImpl implements ConversionRemoteDataSource {
         throw const ApiException('Empty response body');
       }
       return ConversionResponseModel.fromJson(body);
-    } on DioException catch (error) {
-      throw ApiException(error.message ?? 'Network error');
-    } on FormatException catch (error) {
-      throw ApiException('Unexpected API response: ${error.message}');
+    } on DioException {
+      throw ApiException(
+        ApiUserMessageMapper.conversionMessageFor(
+          fiatCurrencyId: fiatCurrencyId,
+        ),
+      );
+    } on FormatException {
+      throw ApiException(
+        ApiUserMessageMapper.conversionMessageFor(
+          fiatCurrencyId: fiatCurrencyId,
+        ),
+      );
     }
   }
 }

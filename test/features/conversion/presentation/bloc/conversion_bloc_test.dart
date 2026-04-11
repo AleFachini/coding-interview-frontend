@@ -37,8 +37,20 @@ void main() {
       isA<ConversionState>().having(
         (s) => s.errorMessage,
         'error',
-        'Enter a valid amount greater than zero.',
+        'Ingresa un monto válido mayor a cero.',
       ),
+    ],
+  );
+
+  blocTest<ConversionBloc, ConversionState>(
+    'swap swaps left and right and moves amount currency to new left',
+    build: () => ConversionBloc(useCase),
+    act: (ConversionBloc bloc) => bloc.add(const SwapCurrenciesRequested()),
+    expect: () => <Matcher>[
+      isA<ConversionState>()
+          .having((s) => s.leftCurrency.code, 'left', 'VES')
+          .having((s) => s.rightCurrency.code, 'right', 'USDT')
+          .having((s) => s.amountCurrency.code, 'amountCurrency', 'VES'),
     ],
   );
 

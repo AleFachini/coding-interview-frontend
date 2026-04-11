@@ -18,7 +18,7 @@ void main() {
     registerFallbackValue(_FakeGetConversionQuoteParams());
   });
 
-  testWidgets('conversion page shows title after startup request', (
+  testWidgets('conversion page shows Cambiar and TENGO labels', (
     WidgetTester tester,
   ) async {
     final GetConversionQuoteUseCase useCase = _MockGetConversionQuoteUseCase();
@@ -35,8 +35,9 @@ void main() {
       ),
     );
     await tester.pump();
-    await tester.pumpAndSettle();
 
-    expect(find.text('Currency Converter'), findsOneWidget);
+    expect(find.text('Cambiar'), findsOneWidget);
+    expect(find.text('TENGO'), findsOneWidget);
+    expect(find.text('QUIERO'), findsOneWidget);
   });
 }

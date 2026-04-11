@@ -17,7 +17,9 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Coding Interview Converter',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF1A4EFC)),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFFF5B320),
+        ),
         useMaterial3: true,
       ),
       home: BlocProvider<ConversionBloc>(
