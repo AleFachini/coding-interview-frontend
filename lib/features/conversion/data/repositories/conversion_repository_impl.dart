@@ -26,13 +26,9 @@ class ConversionRepositoryImpl implements ConversionRepository {
         amountCurrencyId: amountCurrencyId,
       );
 
-      final double convertedAmount = type == 1
-          ? amount.toDouble() * response.fiatToCryptoExchangeRate
-          : amount.toDouble() / response.fiatToCryptoExchangeRate;
-
       return ConversionQuote(
         rate: response.fiatToCryptoExchangeRate,
-        convertedAmount: convertedAmount,
+        convertedAmount: 0,
       );
     } on ApiException catch (error) {
       throw ConversionFailure(error.message);

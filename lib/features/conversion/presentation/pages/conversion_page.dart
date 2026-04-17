@@ -137,7 +137,7 @@ class _ConversionPageState extends State<ConversionPage> {
                               fontWeight: FontWeight.w600,
                             ),
                             decoration: InputDecoration(
-                              prefixText: '${state.amountCurrency.code} ',
+                              prefixText: '${state.leftCurrency.code} ',
                               prefixStyle: textTheme.titleMedium?.copyWith(
                                 color: ConversionColors.accent,
                                 fontWeight: FontWeight.w600,
